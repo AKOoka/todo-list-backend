@@ -1,11 +1,13 @@
 const { model, Schema, Types } = require('mongoose')
 
 const text = new Schema({
-  userContent: {
-    type: Array
+  userText: {
+    type: String,
+    required: true
   },
   userStyles: {
-    type: String
+    type: String,
+    required: true
   },
   user: {
     type: Types.ObjectId,
